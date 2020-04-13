@@ -150,7 +150,7 @@ One by one, we are going to go through this. I'll walk you each through it if yo
 
 ## <span id="gitignore">About .gitignore</span>
 
-###[Video about .gitignore](./media/gitignore.mp4?raw=true)
+### [Video about .gitignore](./media/gitignore.mp4?raw=true)
 
 Ever used a Mac or looked at the repo of [someone who used a Mac](https://github.com/csheldonhess/citizen-weed-warriors) and seen that annoying .DS_Store file show up?
 
