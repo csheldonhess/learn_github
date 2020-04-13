@@ -1,4 +1,5 @@
-# How to GitHub, Part 1
+# GitHub "basics" 
+(This is a lot more than the basics!)
 
 Agenda:
 1. [First steps](#first_steps)
@@ -22,7 +23,8 @@ We'll break this down into a different scenarios/levels of complexity. (Go in or
 
 ## <span id="simple">One person, one repo, multiple machines (or directories), not worrying about branches yet</span>
 
-**[First video](./media/github1.mp4)** - shows how to create a repository on GitHub, clone it to your local machine, make changes, and push those changes back up to the remote repo
+### [First video](./media/github1.mp4?raw=true)
+Shows how to create a repository on GitHub, clone it to your local machine, make changes, and push those changes back up to the remote repo
 
 ![a diagram showing two local repos and one remote repo](./media/multiple_machines_one_remote.jpeg)
 
@@ -31,6 +33,8 @@ We'll break this down into a different scenarios/levels of complexity. (Go in or
 	* `cd /c/Users/[username]/Documents` - I created two folders inside Documents:
 		* `mkdir machine1`
 		* `mkdir machine2`
+	* and then I navigated into the first of those:
+		* `cd machine1`
 1. Clone your repository to your machine. The command you'll type (type all of it except the URL, don't just copy/paste) in Git Bash is
 	* `git clone https://github.com/[username]/github_practice.git`
 	* this will make a directory inside your current working directory; to do anything else, you'll have to navigate into that directory (`cd github_practice`) 
@@ -53,7 +57,8 @@ We'll break this down into a different scenarios/levels of complexity. (Go in or
 1. Feel free to go see the changes in GitHub.
 
 
-**[Second video](./media/github2.mp4)** - how to move between "machines" (we are using directories, here; when this lesson is done in person, I actually make you move to a different machine, and it's very dramatic), using git push and git pull to keep them both up to date with your remote repository
+### [Second video](./media/github2.mp4?raw=true)
+How to move between "machines" (we are using directories, here; when this lesson is done in person, I actually make you move to a different machine, and it's very dramatic), using git push and git pull to keep them both up to date with your remote repository
 
 1. Now **change directories.** If you started in the `machine1` directory, use `cd` in Git Bash to move to the `machine2` directory.
 1. Clone the repository from GitHub on the "new machine" (trust me that this works the same across multiple machines as it works across multiple directories), and navigate into the directory housing your local repo in the second directory.
@@ -68,7 +73,7 @@ We'll break this down into a different scenarios/levels of complexity. (Go in or
 
 You might recall from the [optional reading](https://nvie.com/posts/a-successful-git-branching-model/) (which I don't think I formally assigned you, so... you might find out if you go read it now) that sometimes&mdash;especially when we're working on a multi-person team, but even sometimes when we're working alone&mdash;we want to work on more than one feature at once, without any risk that we damage our core (hopefully fully tested) functionality. We can segment our work by using branches.
 
-**[Video about branching](./media/github3.mp4)**
+### [Video about branching](./media/github3.mp4?raw=true)
 
 1.  Make sure you've got everything pulled onto your local repository from your remote repository (on GitHub) with another `git status` and/or `git pull origin master`
 1. We only have one branch, named `master` right now. Prove it to ourselves:
@@ -112,7 +117,7 @@ We're going to switch repositories now.
 Here is our model:
 ![a diagram showing multiple remotes](./media/remotes.jpg)
 
-And **[here is the video](./media/github4.mp4)**
+### [Here is the video](./media/github4.mp4?raw=true)
 
 1. `cd` back up to the parent directory so that you aren't making a Git repo inside a Git repo (which is a surefire way to make yourself very unhappy). 
 1. Go to [our datasets repository](https://github.com/ccac-data-analytics/datasets) and **do not clone it.**
@@ -145,7 +150,7 @@ One by one, we are going to go through this. I'll walk you each through it if yo
 
 ## <span id="gitignore">About .gitignore</span>
 
-**[Video about .gitignore](./media/gitignore.mp4)**
+###[Video about .gitignore](./media/gitignore.mp4?raw=true)
 
 Ever used a Mac or looked at the repo of [someone who used a Mac](https://github.com/csheldonhess/citizen-weed-warriors) and seen that annoying .DS_Store file show up?
 
